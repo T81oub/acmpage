@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@media only screen and (max-width: 600px) {
+
+  * {
+      font-size: 13px;
+  }
+
+  h1 {
+      font-size: 3rem !important;
+  }
+  p {
+    font-size: 3rem !important;
+}
+
+  span {
+      font-size: inherit;
+  }
+  .box{
+    width:400px;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+.mb-nav{
+  opacity: 0;
+}
+.landing {
+  position: relative;
+  padding: 1.7rem 0 2rem;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: #192e3a;
+  display: flex;
+  flex-direction: column;
+  top:0px;
+  right:0px;
+  bottom:0px;
+  left:0px;
+ 
+}
+.landing.blur{
+    filter: blur(1rem);
+}
+
+.navbar {
+  position: relative;
+  max-width: 81rem;
+  width: 100%;
+  margin: 0 100px;
+  padding: 0 15px;
+  z-index: 10;
+}
+
+header {
+  position: relative;
+  z-index: 70;
+}
+
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo img {
+  width: 80px;
+  margin-right: 0.6rem;
+  margin-top: -0.6rem;
+}
+
+.logo p {
+  color:  #fff;
+  font-size: 1.55rem;
+  line-height: 1.2;
+  font-weight: 800;
+}
+.links{
+    width:25%;
+    margin-right: 120px;
+}
+.links ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  
+}
+
+.links a {
+  color:  #e7e3e3;
+  margin-left: 4.5rem;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.links a:hover {
+  color: #5bacdf;
+  transform: scale(1.05);
+}
+
+.btn {
+  position: absolute;
+  padding: 0.9rem 1.9rem;
+  color: #fff ;
+  background-color: #64bcf4;
+  border-radius: 16px;
+  text-transform: capitalize;
+  transition: 0.3s;
+}
+.btn button{
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff ;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #64bcf4;
+    cursor: pointer;
+}
+
+.btn:hover , .btn button:hover{
+  background-color: #5bacdf;
+  transform: scale(1) !important;
+}
+
+
+.homepage .container {
+    
+    margin-top: 60px;
+    margin-left: 10%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.btitle {
+  font-size: 1.4rem;
+  color: #189ad3;
+  
+}
+h1 span{
+    color:#FFC300;
+}
+h2 span{
+    color:#D70040;
+}
+.text {
+  color:  #ccc;
+  font-size: 1.1rem;
+  margin:20px 0 20px;
+ 
+}
+
+
+
+.acmlogo {
+  width:70%;
+  height:100%;
+  margin-left:80px;
+  
+}
+
+
+.shape {
+  position: absolute;
+  z-index: 0;
+  width: 500px;
+  margin-top: 30%;
+  left: -15px;
+  opacity: 0.1;
+}
+.icon{
+    width:100%;
+}
+.quesbox{
+   width: 382px;
+    background: #fff;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    z-index: 5;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.quesboxr{
+    
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    
+}
+.quesbox .questitle{
+    color :#D70040;
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    border-radius: 5px 5px 0 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+.quesbox .info{
+    padding: 15px 33px;
+    font-weight: 400;
+    
+    font-size: 15px;
+}
+.quesbox .para{
+    border-top: 1px solid lightgrey;
+    height: 60px;
+    display: flex;
+    padding-left: 25%;
+    padding-top: 4%;;
+   
+   
+}
+.quesbox .para span{
+    color:#FFC300;
+}
+#thmas-input-text{
+  margin:8px 0px;
+  height:30px;
+  width:50%;
+ 
+  border-radius: 20px;
+  padding-left:14px;
+ 
+    outline:none;
+    border-color: #192e3a;
+  color:rgb(0, 0, 0);
+  background-color: rgb(249, 249, 251);
+}
+#thmas-button{
+  width:100px;
+    border-radius:5px;
+    padding:5px;
+    cursor:pointer;
+    font-weight:550;
+    margin:16px 16px;
+    border:0.1rem solid#D70040;
+    color:#D70040;
+    background-color: transparent;
+}
+
+
+
